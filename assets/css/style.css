@@ -217,7 +217,19 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000 !important;
   position: relative;
 }
-.fh5co-nav ul li.active > a:after {
+
+/**
+Правило для вложенных пунктов менб, чтобы цыет из был красным
+ */
+.fh5co-nav ul.dropdown > li.active > a {
+  color: #f95959 !important;
+  position: relative;
+}
+
+/**
+Показывается цвет только для корневых пунктов
+ */
+.fh5co-nav ul.menu > li.active > a:after {
   position: absolute;
   bottom: 25px;
   left: 15px;
@@ -227,6 +239,17 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #F95959;
   margin: 0 auto;
 }
+
+/*.fh5co-nav ul li.active > a:after {
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #F95959;
+  margin: 0 auto;
+}*/
 
 #fh5co-counter,
 .fh5co-bg {

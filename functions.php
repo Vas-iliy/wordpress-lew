@@ -1,11 +1,6 @@
 <?php
-/**
- * Law functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package Law
- */
+
+require_once get_template_directory() . '/Law_Header_Memu.php';
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
@@ -50,7 +45,8 @@ if ( ! function_exists( 'law_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'law' ),
+				'header-menu' => esc_html__( 'Head', 'law' ),
+				'footer-menu' => esc_html__( 'Foot', 'law' )
 			)
 		);
 

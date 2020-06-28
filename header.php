@@ -30,7 +30,12 @@
                         <div id="fh5co-logo"><a href="index.html">Law<span>.</span></a></div>
                     </div>
                     <div class="col-xs-10 text-right menu-1">
-                        <ul>
+                        <? wp_nav_menu(array(
+                                'theme_location' => 'header-menu',
+                            'container' => false,
+                            'walker' => new Law_Header_Memu
+                        )) ?>
+                       <!-- <ul>
                             <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="practice.html">Practice Areas</a></li>
                             <li><a href="won.html">Won Cases</a></li>
@@ -47,7 +52,7 @@
                             <li><a href="contact.html">Contact</a></li>
                             <li class="btn-cta"><a href="#"><span>Login</span></a></li>
                             <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
 
