@@ -1,4 +1,8 @@
+/*
+для секций на всю ширину экрана убираем отступы
+ */
 #home-slider > .fw-container-fluid,
+#fh5co-consult > .fw-container-fluid,
 #fh5co-content > .fw-container-fluid{
     padding: 0;
 }
