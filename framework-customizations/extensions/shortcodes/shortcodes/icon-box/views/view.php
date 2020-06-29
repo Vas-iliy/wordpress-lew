@@ -16,9 +16,15 @@
 		<i class="<?php echo esc_attr($atts['icon']); ?>"></i>
 	</div>
 	<div class="fw-iconbox-aside">
+		<?if(!empty($atts['icon_add_link'])):?>
+            <a href="<?if(!empty($atts['icon_link'])) echo $atts['icon_link']?>">
+		<?endif;?>
 		<div class="fw-iconbox-title">
 			<h3><?php echo $atts['title']; ?></h3>
 		</div>
+		<?if(!empty($atts['icon_add_link'])):?>
+            </a>
+		<?endif;?>
 		<div class="fw-iconbox-text">
 			<p><?php echo $atts['content']; ?></p>
 		</div>
