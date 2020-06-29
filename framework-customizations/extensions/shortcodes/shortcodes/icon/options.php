@@ -16,7 +16,7 @@ $options = array(
 	//custom
 	'url'    => array(
 		'type'  => 'text',
-		'label' => __( 'URL', 'clean' )
+		'label' => __( 'URL', 'fw' )
 	)
 
 );
