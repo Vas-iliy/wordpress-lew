@@ -100,3 +100,6 @@
 .fw_form_fw_form .wrap-forms label {
     font-weight: 400;
 }
+.form-alert {
+    display: none;
+}
