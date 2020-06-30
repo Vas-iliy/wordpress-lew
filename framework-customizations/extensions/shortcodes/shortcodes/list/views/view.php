@@ -3,22 +3,24 @@
 }
 ?>
 
-<?if(!empty($atts['span_wrapper'])):?>
-    <div <?if(!empty($atts['span_wrapper_class'])) echo "class='{$atts['span_wrapper_class']}'"?>>
-<?endif;?>
-    <span
-        <?if(!empty($atts['span_class'])) echo "class='{$atts['span_class']}'"?>
-        <?if(!empty($atts['span_id'])) echo "id='{$atts['span_id']}'"?>
-        <?if(!empty($atts['span_data_attrs'])) echo $atts['span_data_attrs']?>
+    <li
+        <?if(!empty($atts['list_class'])) echo "class='{$atts['list_class']}'"?>
+        <?if(!empty($atts['list_id'])) echo "id='{$atts['list_id']}'"?>
     >
 
-        <?if(!empty($atts['span_icon'])):?>
-            <i class="<?=$atts['span_icon']?>"></i>
+        <?if(!empty($atts['list_icon'])):?>
+            <i class="<?=$atts['list_icon']?>"></i>
         <?endif;?>
 
-        <?if(!empty($atts['span_content'])) echo $atts['span_content']?>
-    </span>
-<?if(!empty($atts['span_wrapper'])):?>
-    </div>
-<?endif;?>
+	    <?if(!empty($atts['list_wrapper'])):?>
+            <a <?if(!empty($atts['list_link'])) echo "href='{$atts['list_link']}'"?>>
+        <?endif;?>
+
+            <?if(!empty($atts['list_content'])) echo $atts['list_content']?>
+
+	    <?if(!empty($atts['list_wrapper'])):?>
+            </a>
+	    <?endif;?>
+    </li>
+
 

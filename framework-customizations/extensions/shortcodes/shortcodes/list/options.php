@@ -3,44 +3,38 @@
 }
 
 $options = array(
-	'span_wrapper'       => array(
+	'span_icon'       => array(
+		'type' => 'icon',
+		'label' => __( 'List Icon', 'fw' )
+	),
+
+	'list_wrapper'       => array(
 		'type' => 'checkbox',
-		'label' => __( 'Wrap in div', 'fw' ),
+		'label' => __( 'Wrap in link', 'fw' ),
 		'text' => '',
 	),
 
-	'span_wrapper_class'       => array(
+	'list_link'       => array(
 		'type' => 'text',
-		'label' => __( 'Wrapper Class', 'fw' )
+		'label' => __( 'Link', 'fw' )
 	),
 
-	'span_icon'       => array(
-		'type' => 'icon',
-		'label' => __( 'Span Icon', 'fw' )
-	),
-
-	'span_content'    => array(
+	'list_content'    => array(
 		'type'  => 'text',
-		'label' => __( 'Span Content', 'fw' ),
-		'desc'  => __( 'Span Content', 'fw' ),
+		'label' => __( 'List Content', 'fw' ),
+		'desc'  => __( 'List Content', 'fw' ),
 	),
 
-	'span_class'    => array(
+	'list_class'    => array(
 		'type'  => 'text',
-		'label' => __( 'Span Class', 'fw' ),
-		'desc'  => __( 'Span Class', 'fw' ),
+		'label' => __( 'List Class', 'fw' ),
+		'desc'  => __( 'List Class', 'fw' ),
 	),
 
-	'span_id'    => array(
+	'list_id'    => array(
 		'type'  => 'text',
-		'label' => __( 'Span ID', 'fw' ),
-		'desc'  => __( 'Span ID', 'fw' ),
-	),
-
-	'span_data_attrs'    => array(
-		'type'  => 'text',
-		'label' => __( 'Attributes', 'fw' ),
-		'desc'  => __( 'Attributes', 'fw' ),
+		'label' => __( 'List ID', 'fw' ),
+		'desc'  => __( 'List ID', 'fw' ),
 	)
 
 );
