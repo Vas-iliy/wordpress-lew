@@ -20,7 +20,7 @@ $options = array(
 	),
 
 	'list_content'    => array(
-		'type'  => 'text',
+		'type'  => 'textarea',
 		'label' => __( 'List Content', 'fw' ),
 		'desc'  => __( 'List Content', 'fw' ),
 	),

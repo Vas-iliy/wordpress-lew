@@ -2,7 +2,7 @@
 	die( 'Forbidden' );
 }
 ?>
-
+<ul>
     <li
         <?if(!empty($atts['list_class'])) echo "class='{$atts['list_class']}'"?>
         <?if(!empty($atts['list_id'])) echo "id='{$atts['list_id']}'"?>
@@ -22,5 +22,6 @@
             </a>
 	    <?endif;?>
     </li>
+</ul>
 
 
