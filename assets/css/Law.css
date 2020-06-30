@@ -26,7 +26,8 @@
     margin-bottom: 15px;
 }
 
-#fh5co-practice .fh5co-heading{
+#fh5co-practice .fh5co-heading,
+#fh5co-blog .fh5co-heading {
     padding: 0 16%;
 }
 .law-services .fw-iconbox {
@@ -102,4 +103,8 @@
 }
 .form-alert {
     display: none;
+}
+
+a.btn.btn-primary:visited {
+    color: #ffffff;
 }
