@@ -138,3 +138,7 @@ a.btn.btn-primary:visited {
 #menu-foot li a:hover {
     text-decoration: underline;
 }
+
+.p-0 {
+    padding: 0;
+}
