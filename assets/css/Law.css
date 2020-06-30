@@ -121,3 +121,20 @@ a.btn.btn-primary:visited {
 #fh5co-about .fw-icon {
     padding: 0 10px;
 }
+
+#menu-foot {
+    margin: 0;
+    padding: 0;
+}
+#menu-foot li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-foot li a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+#menu-foot li a:hover {
+    text-decoration: underline;
+}
