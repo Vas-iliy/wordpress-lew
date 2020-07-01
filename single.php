@@ -15,6 +15,11 @@
                         <h1><?php echo the_title() ?></h1>
                         <img class="pull-left law-post-image" src="<?php echo $img_url ?>" alt="">
 						<?php the_content() ?>
+
+                    <? if(comments_open() || get_comments_number()) {
+                        comments_template();
+                        } ?>
+
 					<?php endwhile; ?>
                         <!-- post navigation -->
 					<?php else: ?>
