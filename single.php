@@ -17,7 +17,7 @@
 						<?php the_content() ?>
 
                     <? if(comments_open() || get_comments_number()) {
-                        comments_template();
+                        comments_template('_comment');
                         } ?>
 
 					<?php endwhile; ?>

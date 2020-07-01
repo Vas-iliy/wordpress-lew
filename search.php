@@ -1,53 +1,27 @@
-<?php
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package Law
- */
+<?php get_header() ?>
 
-get_header();
-?>
+	<div id="fh5co-blog" class="fh5co-bg-section" style="background-color:#fcfcfc;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<?php if( have_posts() ): ?>
+						<h1 class="page-title">
+							<?php
+							/* translators: %s: search query. */
+							printf( esc_html__( 'Search Results for: %s', 'law' ), '<span>' . get_search_query() . '</span>' );
+							?>
+						</h1>
+						<ul>
+							<?php while ( have_posts() ) : the_post(); ?>
+								<li><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
+							<?php endwhile; ?>
+						</ul>
+					<?php else: ?>
+						<p><?php _e('Nothing found', 'law') ?></p>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<main id="primary" class="site-main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'law' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer() ?>
