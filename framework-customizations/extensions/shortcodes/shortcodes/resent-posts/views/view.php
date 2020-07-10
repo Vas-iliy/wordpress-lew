@@ -7,6 +7,7 @@ $num = abs((int)$atts['posts_number']) ? $atts['posts_number'] : 1;
 
 <?
 $query = new WP_Query(array(
+        'post_type' => 'post',
 	'post_per_page' => $num
 ));
 ?>
@@ -34,5 +35,6 @@ $query = new WP_Query(array(
         </div>
     <?endwhile;?>
     <?endif;?>
+    <? wp_reset_postdata(); ?>
 </div>
 
